@@ -23,15 +23,6 @@ function menuOpen() {
     document.getElementById("menu-large").classList.toggle("show");
 }
 
-/*social-media*/
-document.getElementById("midias").onclick = function() {midiaSocial()};
-function midiaSocial(){
-    document.getElementById("midiasBox").style.boxShadow = "0px 0px 64px 24px rgba(3,233,244,1)";
-    document.getElementById("midiasBox").style.webkitBoxShadow = "0px 0px 64px 24px rgba(3,233,244,1)";
-    setTimeout(function(){ document.getElementById("midiasBox").style.boxShadow = "none" }, 3000);
-    setTimeout(function(){ document.getElementById("midiasBox").style.webkitBoxShadow = "none" }, 3000);
-}
-
 /*Open sections*/
 function aboutOpen(){
     let about = document.getElementById("about")
