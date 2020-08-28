@@ -13,7 +13,7 @@
     a{text-decoration: none;}
     ul,li{list-style-type: none;}
 
-/**CLASSES AUXILIARES**/
+/**AUX CLASSES**/
 .center{
     max-width: 1280px;
     padding: 0 2%;
@@ -33,7 +33,7 @@ section.main{
     height: 100vh;
     display: flex;
 }
-/**MENU-LATERAL**/
+/**LATERAL-MENU**/
 .menu-desktop{
     width: 60px;
     height: 100%;
@@ -178,7 +178,7 @@ section.main{
     flex-direction: column;
     justify-content: space-between;
 }
-/**CHAMADA NOME**/
+/**NAME**/
 .nome-frase{
     text-align: center;
     width: 600px;
@@ -212,7 +212,7 @@ section.main{
     0%{margin-top: -150px;}
     100%{margin-top: 200px;}
 }
-/**BOX-MEDIA-SOCIAL**/
+/**BOX-SOCIAL-MEDIA**/
 .social-media{
     margin: 0 auto 70px auto;
     display: flex;
@@ -253,7 +253,7 @@ section.about{
     top: 10%;
     left: 10%;
 }
-/**estilizacoes-janela**/
+/**WINDOW STYLE**/
 .window{
     width: 70vw;
     height: 70vh;
@@ -307,7 +307,7 @@ section.about{
     font-size: 12px;
     cursor: default;
 }
-/**conteudo-janela-about**/
+/**CONTENT ABOUT-WINDOW**/
 .eu{
     margin: 2% auto;
     width: 250px;
@@ -329,7 +329,7 @@ section.portfolio{
     top: 13%;
     left: 13%;
 }
-/**conteudo-janela-portfolio**/
+/**CONTENT PORTFOLIO-WINDOW**/
 section.portfolio i{
     position: relative;
     left: 50%;
@@ -371,7 +371,7 @@ section.servicos{
     top: 16%;
     left: 16%;
 }
-/**conteudo-janela-servicos**/
+/**CONTENT SERVICOS-WINDOW**/
 section.servicos h1{
     margin: 4% 0;
     text-align: center;
@@ -397,7 +397,7 @@ section.contato{
     top: 19%;
     left: 19%;
 }
-/**conteudo-janela-contato**/
+/**CONTENT CONTATO-WINDOW**/
 section.contato h1{
     color: white;
     font-size: 20px;
@@ -423,12 +423,10 @@ section.contato > .window > .social-media > nav{
 /**RESPONSIVE**/
 
 @media screen and (max-width: 768px){
-    /*altura ajustavel para mobile*/
     section.main{
         height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
     }
-    /**MENU-LATERAL**/
+    /**LATERAL MENU**/
     .menu-desktop{
         width: 45px;
     }
@@ -464,7 +462,7 @@ section.contato > .window > .social-media > nav{
         left: 40px;
         top: 5px;
     }
-    /**conteudo pagina**/
+    /**content page**/
     .nome-frase{
         padding: 5px;
         width: 90%;
@@ -473,7 +471,7 @@ section.contato > .window > .social-media > nav{
     .nome-frase h2{
         font-size: 18px;
     }
-    /**BOX-MEDIA-SOCIAL**/
+    /**BOX-SOCIAL-MEDIA**/
     .social-media{
         max-width: 200px;
         margin: 0 auto 70px auto;
@@ -486,7 +484,7 @@ section.contato > .window > .social-media > nav{
         top: 0px;
         left: 45px;
     }
-    /**estilizacoes-janela**/
+    /**window style**/
     .window{
         width: calc(100vw - 50px);
         height: 100vh;
@@ -497,7 +495,7 @@ section.contato > .window > .social-media > nav{
     .button-close p{
         top: 43%;
     }
-    /**conteudo-janela-about**/
+    /**content about window**/
     .eu{
         margin: 25px auto;
     }
@@ -510,7 +508,7 @@ section.contato > .window > .social-media > nav{
         top: 0;
         left: 45px;
     }
-    /**conteudo-janela-portfolio**/
+    /**content portfolio window**/
     section.portfolio > .window > p{
         margin: 25px 0;
     }
@@ -530,7 +528,7 @@ section.contato > .window > .social-media > nav{
         top: 0;
         left: 45px;
     }
-    /**conteudo-janela-servicos**/
+    /**content servicos window**/
     section.servicos h1{
         margin: 25px 0;
     }
@@ -542,7 +540,7 @@ section.contato > .window > .social-media > nav{
         top: 0;
         left: 45px;
     }
-    /**conteudo-janela-contato**/
+    /**content contact window**/
     section.contato h1{
         margin: 100px 0;
     }
