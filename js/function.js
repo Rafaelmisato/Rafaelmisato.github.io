@@ -1,17 +1,4 @@
-/*altura ajustavel mobile */
-let vh = window.innerHeight * 0.01;
-
-window.addEventListener('resize', () => {
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-})
-window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
-
-
-/**relogio**/
+/**clock**/
 function clock(){
     let data=new Date();
     let hour=data.getHours();
@@ -36,7 +23,7 @@ function menuOpen() {
     document.getElementById("menu-large").classList.toggle("show");
 }
 
-/*midias-sociais*/
+/*social-media*/
 document.getElementById("midias").onclick = function() {midiaSocial()};
 function midiaSocial(){
     document.getElementById("midiasBox").style.boxShadow = "0px 0px 64px 24px rgba(3,233,244,1)";
@@ -45,7 +32,7 @@ function midiaSocial(){
     setTimeout(function(){ document.getElementById("midiasBox").style.webkitBoxShadow = "none" }, 3000);
 }
 
-/*Abrir secoes*/
+/*Open sections*/
 function aboutOpen(){
     let about = document.getElementById("about")
     about.classList.remove("hide");
@@ -67,7 +54,7 @@ function contatoOpen(){
     contato.classList.add("show");
 }
 
-/*fechar secoes*/
+/*close sections*/
 function closeAbout(){
     let fechar = document.getElementById("about")
     fechar.classList.remove("show");
@@ -89,7 +76,7 @@ function closeContato(){
     fechar.classList.add("hide");
 }
 
-/*colocar janela a frente, quando aberta*/
+/*window z-index*/
 function zAbout(){
     let zAbout = document.getElementById("zAbout");
     let zPortfolio = document.getElementById("zPortfolio");
