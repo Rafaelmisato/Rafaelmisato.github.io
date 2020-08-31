@@ -435,6 +435,28 @@ section.contato > .window > .social-media > nav{
 
 /**RESPONSIVE**/
 
+/**SECTION-portfolio**/
+@media screen and (max-width: 768px){
+    section.portfolio{
+        top: 0;
+        left: 45px;
+    }
+    /**content portfolio window**/
+    section.portfolio > .window > p{
+        margin: 25px 0;
+    }
+    .portfolio-descricao-wraper{
+        height: 70vh;
+        overflow-y: scroll;
+    }
+    .portfolio-descricao{
+        width: 90%;
+    }
+    .site{
+        padding-top: 90%;
+        width: 90%;
+    }
+}
 @media screen and (max-width: 768px){
     section.main{
         height: 100vh;
