@@ -1,0 +1,51 @@
+.menu-large-wraper{
+    display: none;
+    z-index: 3;
+}
+.menu-large{
+    width: 240px;
+    height: 275px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    border-right: 2px solid rgb(60,60,60);
+    border-top: 2px solid rgb(60,60,60);
+    border-bottom: 2px solid rgb(60,60,60);
+    border-left: 1px solid rgb(60,60,60);
+    border-radius: 4px 8px 8px 4px;
+    -webkit-box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.84);
+    -moz-box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.84);
+    box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.84);
+    display: flex;
+    flex-direction: column;
+}
+.mn{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid rgb(60,60,60);
+}
+.mn h4{
+    color: rgba(200,200,200,0.7);
+    padding: 0 20px;
+    width: 100%;
+}
+.mn h4:hover{
+    color: white;
+    transition: 0.4s;
+    border-left: 6px solid rgba(255,255,255);
+    cursor: pointer;
+}
+.me{
+    background-image: url(../img/IMG_8870.JPG);
+    background-size: cover;
+    background-position: 0px -16px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.menu-large h2{
+    color: white;
+    padding-left: 30px;
+}

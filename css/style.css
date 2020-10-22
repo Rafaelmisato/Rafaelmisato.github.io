@@ -24,6 +24,8 @@
 .zfront{z-index: 1 !important;}
 .zback{z-index: none !important;}
 
+
+
 /**INDEX.HTML**/
 /**BACKGROUND**/
 section.main{
@@ -118,6 +120,9 @@ section.main{
     margin: 20px 8px;
     cursor: default;
 }
+
+
+
 /**MENU-CLICK**/
 .menu-large-wraper{
     display: none;
@@ -170,6 +175,10 @@ section.main{
     color: white;
     padding-left: 30px;
 }
+
+
+
+
 /**CONTEUDO HOME**/
 .content-home{
     width: 100%;
@@ -247,6 +256,8 @@ section.main{
     0%{margin-bottom: -70px;}
     100%{margin-bottom: 70px;}
 }
+
+
 /**SECTION-ABOUT**/
 section.about{
     position: absolute;

@@ -1,0 +1,33 @@
+.nome-frase{
+    text-align: center;
+    width: 600px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 0 20px 0 20px;
+    margin: 200px auto 0 auto;
+    animation: namedown 1s linear;
+}
+.nome-frase svg{
+    stroke-width: 1px;
+    stroke: white;
+    width: 100%;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: nomesvg 10s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+@keyframes nomesvg{
+    0%{stroke-dashoffset: 1000;}
+    50%{stroke-dashoffset: 0;}
+    100%{stroke-dashoffset: 0;}
+}
+.nome-frase h2{
+    font-size: 32px;
+    font-style: italic;
+    text-align: center;
+}
+@keyframes namedown{
+    0%{margin-top: -150px;}
+    100%{margin-top: 200px;}
+}
