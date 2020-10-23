@@ -80,10 +80,10 @@ import * as THREE from '../threeJS/three.module.js';
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
 
-				// deixar funcao abaixo para debug
+				// FPS
 
-				stats = new Stats();
-				document.body.appendChild( stats.dom );
+				// stats = new Stats();
+				// document.body.appendChild( stats.dom );
 
 				//
 
