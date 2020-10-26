@@ -4,11 +4,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
 a{text-decoration: none;}
 img{max-width: 100%;display: block;}
 ul,li{list-style-type: none;}
+html, body{overflow: hidden;}
 
 body {
 	padding: 0 2%;
@@ -20,14 +21,14 @@ header {
 
 header > p{
 	padding: 20px;
-	color: white;
+	color: #fff;
 	font-size: 16px;
 	font-family: 'Turret Road', cursive;
 }
 
 header > p > a{
-	color: white;
-	font-size: 16px;
+	color: #fff;
+	font-size: 18px;
 	font-family: 'Turret Road', cursive;
 }
 
