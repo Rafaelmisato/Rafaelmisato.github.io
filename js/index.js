@@ -1,8 +1,5 @@
+// Three js functions
 import * as THREE from '../threeJS/three.module.js';
-
-			import Stats from '../libs/stats.module.js';
-
-			import { GUI } from '../libs/dat.gui.module.js';
 
 			let camera, scene, renderer, stats, parameters;
 			let mouseX = 0, mouseY = 0;
@@ -73,24 +70,13 @@ import * as THREE from '../threeJS/three.module.js';
 
 				}
 
-				//
-
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
 
-				// FPS
-
-				// stats = new Stats();
-				// document.body.appendChild( stats.dom );
-
-				//
-
 				document.body.style.touchAction = 'none';
 				document.body.addEventListener( 'pointermove', onPointerMove, false );
-
-				//
 
 				window.addEventListener( 'resize', onWindowResize, false );
 
@@ -116,8 +102,6 @@ import * as THREE from '../threeJS/three.module.js';
 				mouseY = event.clientY - windowHalfY;
 
 			}
-
-			//
 
 			function animate() {
 
