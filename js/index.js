@@ -100,7 +100,6 @@ import * as THREE from './three.module.js';
 			}
 
 			//
-
 			function animate() {
 
 				requestAnimationFrame( animate );
