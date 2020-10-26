@@ -22,11 +22,11 @@ import * as THREE from './three.module.js';
 
 				var textureLoader = new THREE.TextureLoader();
 
-				var sprite1 = textureLoader.load( './textures/snow/snowflake1.png' );
-				var sprite2 = textureLoader.load( './textures/snow/snowflake2.png' );
-				var sprite3 = textureLoader.load( './textures/snow/snowflake3.png' );
-				var sprite4 = textureLoader.load( './textures/snow/snowflake4.png' );
-				var sprite5 = textureLoader.load( './textures/snow/snowflake5.png' );
+				var sprite1 = textureLoader.load( 'textures/snow/snowflake1.png' );
+				var sprite2 = textureLoader.load( 'textures/snow/snowflake2.png' );
+				var sprite3 = textureLoader.load( 'textures/snow/snowflake3.png' );
+				var sprite4 = textureLoader.load( 'textures/snow/snowflake4.png' );
+				var sprite5 = textureLoader.load( 'textures/snow/snowflake5.png' );
 
 				for ( var i = 0; i < 10000; i ++ ) {
 
@@ -74,6 +74,11 @@ import * as THREE from './three.module.js';
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
 
+				document.body.style.touchAction = 'none';
+				document.body.addEventListener( 'pointermove', onPointerMove, false );
+
+				//
+
 				window.addEventListener( 'resize', onWindowResize, false );
 
 			}
@@ -100,6 +105,7 @@ import * as THREE from './three.module.js';
 			}
 
 			//
+
 			function animate() {
 
 				requestAnimationFrame( animate );
