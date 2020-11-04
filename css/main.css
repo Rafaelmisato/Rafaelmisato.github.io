@@ -140,6 +140,7 @@ canvas {
 	width: 90%;
 	border-radius: 10px;
 	padding: 0 20px;
+	animation: down 1.3s ease;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -147,7 +148,6 @@ canvas {
 }
 
 /*contact*/
-
 #contact{
 	display: none;
 	position: absolute;
@@ -267,6 +267,8 @@ canvas {
 	color: rgba(255,255,255,1);
 	text-shadow: 0px 0px 17px rgba(255, 255, 255, 1);
 }
+
+/**animations**/
 @keyframes mediaup{
 	0%{
 	position: absolute;
@@ -283,11 +285,10 @@ canvas {
 }
 
 .animate__animated.animate__zoomInDown{
-	--animate-duration: 2s;
+	--animate-duration: 1s;
 }
 
 @keyframes flicker {
-
 	0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
 		text-shadow:
 			0 0 1px #fff,
@@ -318,5 +319,34 @@ canvas {
 	100%{
 		opacity: 0;
 		pointer-events: none;
+	}
+}
+
+@keyframes down{
+	0%{
+		position: absolute;
+		top: -50%;
+		transform: translate(-50%, -50%);
+	}
+	70%{
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	80%{
+		position: absolute;
+		top: 50%;
+		transform: translate(-45%, -50%);
+	}
+	90%{
+		position: absolute;
+		top: 50%;
+		transform: translate(-55%, -50%);
+	}
+	100%{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
