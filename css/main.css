@@ -1,7 +1,7 @@
 /**general context**/
 :root {
-	--neon-text-color: #f40;
-  --neon-border-color: #08f;
+	--neon-text-color: #f7dc68;
+  --neon-border-color: #2e9599;
 }
 
 * {
@@ -62,15 +62,6 @@ canvas {
 }
 
 .tab-links > button:focus, .tab-links > button:active {
-	/* border: 1px solid #fff;
-	box-shadow: 0px 0px 8px 2px var(--neon-border-color), inset 0px 0px 8px 2px var(--neon-border-color);
-	color: #fff;
-  text-shadow:
-    0 0 1px var(--neon-text-color),
-    0 0 2px var(--neon-text-color),
-    0 0 3px var(--neon-text-color),
-    0 0 4px var(--neon-text-color),
-		0 0 5px var(--neon-text-color); */
 		animation: flicker 1.5s infinite alternate;
 }
 
@@ -78,13 +69,9 @@ canvas {
   position: absolute;
   bottom: 0;
   left: 0;
-
   content: "";
   height: 2px;
   width: 0%;
-
-  background-color: var(--primary);
-
   transition: .4s;
 }
 
@@ -106,20 +93,21 @@ canvas {
 	text-align: center;
 	width: 100%;
 	max-width: 600px;
-	color: #fff;
+	color: #0ff;
 	background-color: transparent;
 	padding: 30px;
 }
 .name svg{
 	stroke-width: 1px;
-	stroke: #fff;
+	stroke: #0ff;
 	stroke-dashoffset: 1000;
 	stroke-dasharray: 1000;
 	animation: nomesvg 10s ease-in-out forwards;
 	animation-delay: 1s;
 }
 .name h2{
-	font-size: 32px;
+	margin-top: -20px;
+	font-size: 20px;
 	font-style: italic;
 	text-align: center;
 	cursor: default;
@@ -148,19 +136,22 @@ canvas {
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	background: rgba(255,255,255, 0.2);
 	border-radius: 10px;
 	padding: 20px;
-	color: white;
+	color: #0ff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+}
+
+#works > .content-works > a > .face > p {
+	color: #333;
 }
 
 .face {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background: #ffcd00;
+	background: #f7dc68;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -172,20 +163,20 @@ canvas {
 .face::before {
 	content: '';
 	position: absolute;
-	top: 120px;
+	top: 130px;
 	width: 100px;
-	height: 25px;
-	background: #b57700;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	transition: 0.5;
+	height: 50px;
+	background: #f46c3f;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	transition: 0.5s;
 }
 
 .face:hover::before {
 	top: 130px;
 	width: 100px;
 	height: 50px;
-	background: #b57700;
+	background: #a7226f;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
@@ -228,7 +219,7 @@ canvas {
 #contact{
 	display: none;
 	position: absolute;
-	top: 50%;
+	top: 54%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -242,25 +233,25 @@ canvas {
 }
 
 #contact > form > h2 {
-	color: #fff;
-	margin-bottom: 16px;
+	color: #0ff;
+	margin-bottom: 10px;
 }
 
 #contact > form > label > input {
 	width: 280px;
-	padding:16px;
-	margin-bottom: 10px;
+	padding:10px;
+	margin-bottom: 6px;
 	border: none;
 	border-radius: 20px;
 	background: rgba(90, 90, 90, 0.4);
 	font-size: 16px;
 	outline: none;
-	color: #fff;
+	color: #0ff;
 }
 
 #contact > form > textarea {
 	width: 280px;
-	height: 200px;
+	height: 150px;
 	padding:16px;
 	margin-bottom: 10px;
 	border: none;
@@ -268,7 +259,7 @@ canvas {
 	background: rgba(90, 90, 90, 0.4);
 	font-size: 16px;
 	outline: none;
-	color: #fff;
+	color: #0ff;
 	resize: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
@@ -276,15 +267,15 @@ canvas {
 
 #contact > form > button {
 	width: 100px;
-	height: 50px;
-	padding:6px;
+	height: 40px;
+	padding:2px;
 	margin-bottom: 16px;
 	border: none;
 	border-radius: 20px;
 	background: rgba(90, 90, 90, 0.9);
 	font-size: 16px;
 	outline: none;
-	color: #fff;
+	color: #0ff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 }
