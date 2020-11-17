@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function TabNavigation() {
 	const html = {
 		links: [...document.querySelector('.tab-links').children],
@@ -49,6 +50,22 @@ function TabNavigation() {
 		init
 	}
 }
+=======
+document.onreadystatechange = function() { 
+	if (document.readyState !== "complete") { 
+			document.querySelector( 
+				"body").style.visibility = "hidden"; 
+			document.querySelector( 
+				"#loader").style.visibility = "visible"; 
+	} else { 
+			document.querySelector( 
+				"#loader").style.display = "none"; 
+			document.querySelector( 
+				"body").style.visibility = "visible"; 
+	} 
+}; 
+
+>>>>>>> 22a5ef0... rebuild portfolio
 
 
 /**form**/
@@ -101,6 +118,7 @@ function ajax(method, url, data, success, error) {
 	xhr.send(data);
 }
 
+<<<<<<< HEAD
 window.addEventListener('load', () => {
 	const tabNavigation = TabNavigation()
 	tabNavigation.init()
@@ -123,3 +141,32 @@ function eyeball(){
 		eye.style.transform = "rotate("+ rot +"deg)"
 	})
 }
+=======
+// window.addEventListener('load', () => {
+// 	const tabNavigation = TabNavigation()
+// 	tabNavigation.init()
+// })
+
+/**smile**/
+
+// document.querySelector('body')
+// .addEventListener('mousemove', eyeball)
+
+// function eyeball(){
+// 	const eye = document.querySelectorAll('.eye');
+// 	eye.forEach((eye) => {
+// 		let x = (eye.getBoundingClientRect().left)
+// 		+ (eye.clientWidth / 2);
+// 		let y = (eye.getBoundingClientRect().top)
+// 		+ (eye.clientHeight / 2);
+// 		let radian = Math.atan2(event.pageX - x, event.pageY - y);
+// 		let rot = (radian * (180 / Math.PI) * -1) + 270;
+// 		eye.style.transform = "rotate("+ rot +"deg)"
+// 	})
+// }
+
+
+/**
+ * slider
+**/
+>>>>>>> 22a5ef0... rebuild portfolio
