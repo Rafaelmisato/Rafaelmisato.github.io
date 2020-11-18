@@ -33,21 +33,6 @@
   </head>
 
   <body>
-    <div class="loader-wraper" id="loader">
-      <div class="loader">
-        <span style="--i:1;" >L</span>
-        <span style="--i:2;" >o</span>
-        <span style="--i:3;" >a</span>
-        <span style="--i:4;" >d</span>
-        <span style="--i:5;" >i</span>
-        <span style="--i:6;" >n</span>
-        <span style="--i:7;" >g</span>
-        <span style="--i:8;" >.</span>
-        <span style="--i:9;" >.</span>
-        <span style="--i:10;" >.</span>
-      </div>
-    </div>
-
     <input type="checkbox" name="menu" id="menu" />
     <label for="menu">
         <header id="home">
@@ -94,6 +79,13 @@
         <input type="radio" name="testimonial" id="t-3" checked>
         <input type="radio" name="testimonial" id="t-4">
         <input type="radio" name="testimonial" id="t-5">
+        <div class="dots">
+          <label for="t-1"></label>
+          <label for="t-2"></label>
+          <label for="t-3"></label>
+          <label for="t-4"></label>
+          <label for="t-5"></label>
+        </div>
         <div class="testimonials">
           <label class="item" for="t-1">
             <img src="./img/site1.png" alt="picture">
@@ -111,13 +103,7 @@
             <img src="./img/site5.png" alt="picture">
           </label>
         </div>
-        <div class="dots">
-          <label for="t-1"></label>
-          <label for="t-2"></label>
-          <label for="t-3"></label>
-          <label for="t-4"></label>
-          <label for="t-5"></label>
-        </div>
+        
       </div>
     </section>
 
@@ -204,10 +190,40 @@
       <p>Copyright &copy; 2020, All Rights Reserved.</p>
       <p>Rafael Hikaru Misato | Web-developer</p>
     </footer>
+
+    <div class="loader-wraper" id="loader">
+      <div class="loader">
+        <span style="--i:1;" >L</span>
+        <span style="--i:2;" >o</span>
+        <span style="--i:3;" >a</span>
+        <span style="--i:4;" >d</span>
+        <span style="--i:5;" >i</span>
+        <span style="--i:6;" >n</span>
+        <span style="--i:7;" >g</span>
+        <span style="--i:8;" >.</span>
+        <span style="--i:9;" >.</span>
+        <span style="--i:10;" >.</span>
+      </div>
+    </div>
     
 
-    <script src="./js/index.js" type="module"></script>
+    <script>
+      document.onreadystatechange = function() { 
+	      if (document.readyState !== "complete") { 
+			document.querySelector( 
+				"body").style.display = "none"; 
+			document.querySelector( 
+				"#loader").style.display = "block"; 
+	    } else { 
+			document.querySelector( 
+				"#loader").style.display = "none"; 
+			document.querySelector( 
+				"body").style.display = "block"; 
+	} 
+}; 
+    </script>
     <script src="./js/main.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <script src="./js/splitting.js"></script>
     <script> Splitting(); </script>
   </body>
