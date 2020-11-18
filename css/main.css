@@ -17,8 +17,9 @@ img {max-width: 100%;display: block;}
 ul,li {list-style-type: none;}
 body {
 	background: #0f0f0f;
-	overflow-x: hidden;
+	height: 100%;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 canvas {
@@ -77,7 +78,6 @@ header
 header {
 	position: fixed;
 	top: 0;
-	width: 100%;
 	z-index: 999;
 	font-family: 'Poppins', sans-serif;
 }
@@ -110,30 +110,30 @@ input:checked ~ label .bg-blur {
 input:checked ~ label .link-one {
 	position: absolute;
 		top: 20vh;
-		left: 20%;
+		left: 60vw;
 		transition: 0.6s ease-in-out;
 }
 input:checked ~ label .link-two {
 	position: absolute;
 		top: 5vh;
-		left: 60%;
+		left: 20vw;
 		transition: 0.6s ease-in-out;
 }
 input:checked ~ label .link-three {
 	position: absolute;
-		top: 50vh;
-		left: 10%;
+		top: 40vh;
+		left: 5vw;
 		transition: 0.6s ease-in-out;
 }
 input:checked ~ label .link-four {
 	position: absolute;
-		top: 40vh;
-		left: 60%;
+		top: 50vh;
+		left: 70vw;
 		transition: 0.6s ease-in-out;
 }
 
 /**menu-links/background*/
-header > label {
+label header {
 	cursor: pointer;
 }
 
@@ -148,7 +148,6 @@ header > label {
 	height: 150px;
 	background: #0ff;
 	border-radius: 50%;
-	z-index: 1000;
 }
 
 .hamburger {
@@ -174,7 +173,7 @@ header > label {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(255,255,255,0.3);
 	height: 100vh;
 	backdrop-filter: blur(5px);
 	cursor: default;
@@ -183,9 +182,6 @@ header > label {
 }
 
 .menu-link{
-	position: absolute;
-	left: 70px;
-	top: 70px;
 	width: 150px;
 	height: 150px;
 }
@@ -204,24 +200,24 @@ header > label {
 
 .link-one{
 	position: absolute;
-	top: -120px;
-	left: -120px;
+	top: -140px;
+	left: -140px;
 }
 
 .link-two {
 	position: absolute;
-	top: -120px;
-	left: -120px;
+	top: -140px;
+	left: -140px;
 }
 .link-three {
 	position: absolute;
-	top: -120px;
-	left: -120px;
+	top: -140px;
+	left: -140px;
 }
 .link-four {
 	position: absolute;
-	top: -120px;
-	left: -120px;
+	top: -140px;
+	left: -140px;
 }
 
 /**
@@ -229,7 +225,7 @@ name svg
 **/
 .name{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -262,11 +258,11 @@ name svg
 }
 
 /**
-slider    -- RE-CHECK, RESPONSIVE AND DIVS
+slider
 **/
 #slider {
 	z-index: -1;
-	margin-top: calc(50vh - 100px);
+	margin-top: calc(50vh - 50px);
 }
 
 .slider {
@@ -283,7 +279,7 @@ slider    -- RE-CHECK, RESPONSIVE AND DIVS
   justify-content: center;
   position: relative;
   min-height: 450px;
-  perspective: 1000px; /*responsive perspective 100px ja resolve alguma coisa*/
+  perspective: 1000px;
 	overflow-x: hidden;
 }
 
@@ -291,7 +287,7 @@ slider    -- RE-CHECK, RESPONSIVE AND DIVS
   top: 10px;
   position: absolute;
   box-sizing: border-box;
-  width: 50vh;
+  width:50vh;
   text-align: center;
   transition: transform 0.4s;
   transform-style: preserve-3d;
@@ -495,7 +491,7 @@ about-me
 	height: 100%;
 	color: #0ff;
 	border-right: 2px solid #0ff;
-	overflow-x: hidden;
+	overflow: hidden;
 	animation: text-animate 6s linear infinite;
 }
 
@@ -591,6 +587,8 @@ about-me
 	color: #ccc;
 	font-family: 'Roboto';
 	margin-bottom: 100px;
+	padding: 0 20px;
+	text-align: center;
 }
 
 /**
@@ -674,6 +672,8 @@ skills
 	position: relative;
 	top: 230px;
 	margin-bottom: 200px;
+	padding: 0 20px;
+	text-align: center;
 }
 
 
@@ -943,4 +943,81 @@ footer p {
 		opacity: 0;
 		pointer-events: none;
 	}
+}
+
+/**
+responsive
+**/
+
+@media (max-width: 426px) {
+	/**header**/
+
+	input:checked ~ label .link-four {
+		position: absolute;
+			top: 60vh;
+			left: 60vw;
+			transition: 0.6s ease-in-out;
+	}
+
+	.hamburger-wraper{
+		margin-top: -50px;
+		margin-left: -50px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	.hamburger {
+		position: relative;
+		top: 20%;
+		left: 20%;
+		width: 20px;
+		height: 5px;
+		background: #000;
+		border-radius: 10px;
+		transition: 0.4s linear;
+	}
+	
+	.hamburger:nth-of-type(1){
+		margin-bottom: 2px;
+	}
+	
+	.hamburger:nth-of-type(3){
+		margin-top: 2px;
+	}
+	
+	.menu-link{
+		width: 100px;
+		height: 100px;
+	}
+
+	/**name svg**/
+	.name h2{
+		margin-top: -20px;
+		font-size: 16px;
+	}
+
+	/**slider**/
+	/**conferir como esta se comportando apos deploy**/
+
+	/**
+	about
+	**/
+	.photo {
+		width: 200px;
+		height: 200px;
+	}
+
+	/**
+	footer
+	**/
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
 }
