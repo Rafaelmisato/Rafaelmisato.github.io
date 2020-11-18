@@ -74,7 +74,7 @@ import * as THREE from './three.module.js';
 				renderer.setSize( window.innerWidth, window.innerHeight / 2 );
 				document.body.appendChild( renderer.domElement );
 
-				document.body.style.touchAction = 'none';
+				// document.body.style.touchAction = 'none';
 				document.body.addEventListener( 'pointermove', onPointerMove, false );
 
 				//
