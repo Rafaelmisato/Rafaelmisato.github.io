@@ -1,56 +1,3 @@
-<<<<<<< HEAD
-function TabNavigation() {
-	const html = {
-		links: [...document.querySelector('.tab-links').children],
-		contents: [...document.querySelector('.tab-content').children],
-		openTab: document.querySelector('[data-open]')
-	}
-
-	function hideAllTabContent(){
-		html.contents.forEach(section => {
-			section.style.display = "none"
-		})
-	}
-
-	function removeAllActiveClass(){
-		html.links.forEach(tab => {
-			tab.className = tab.className.replace("active", "")
-		})
-	}
-
-	function showCurrentTab(id){
-		const tabcontent = document.querySelector('#' + id)
-		tabcontent.style.display = "block"
-	}
-
-	function selectTab(event) {
-		hideAllTabContent()
-		removeAllActiveClass()
-
-		const target = event.currentTarget
-		showCurrentTab(target.dataset.id)
-
-		target.className += "active"
-	}
-
-	function listenForChange(){
-		html.links.forEach(tab => {
-			tab.addEventListener('click', selectTab)
-		})
-	}
-
-	function init(){
-		hideAllTabContent()
-		listenForChange()
-
-		html.openTab.click()
-	}
-
-	return {
-		init
-	}
-}
-=======
 document.onreadystatechange = function() { 
 	if (document.readyState !== "complete") { 
 			document.querySelector( 
@@ -65,7 +12,6 @@ document.onreadystatechange = function() {
 	} 
 }; 
 
->>>>>>> 22a5ef0... rebuild portfolio
 
 
 /**form**/
@@ -118,30 +64,6 @@ function ajax(method, url, data, success, error) {
 	xhr.send(data);
 }
 
-<<<<<<< HEAD
-window.addEventListener('load', () => {
-	const tabNavigation = TabNavigation()
-	tabNavigation.init()
-})
-
-/**smile**/
-
-document.querySelector('body')
-.addEventListener('mousemove', eyeball)
-
-function eyeball(){
-	const eye = document.querySelectorAll('.eye');
-	eye.forEach((eye) => {
-		let x = (eye.getBoundingClientRect().left)
-		+ (eye.clientWidth / 2);
-		let y = (eye.getBoundingClientRect().top)
-		+ (eye.clientHeight / 2);
-		let radian = Math.atan2(event.pageX - x, event.pageY - y);
-		let rot = (radian * (180 / Math.PI) * -1) + 270;
-		eye.style.transform = "rotate("+ rot +"deg)"
-	})
-}
-=======
 // window.addEventListener('load', () => {
 // 	const tabNavigation = TabNavigation()
 // 	tabNavigation.init()
@@ -169,4 +91,3 @@ function eyeball(){
 /**
  * slider
 **/
->>>>>>> 22a5ef0... rebuild portfolio
