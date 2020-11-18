@@ -57,16 +57,16 @@
           <div class="hamburger"></div>
         </div>
 
-        <div class="bg-blur">BLUR</div>
+        <div class="bg-blur"></div>
 
         <div class="menu-link link-one" onclick="window.location='#teste'">
-          HOME1
+          Home
         </div>
         <div class="menu-link link-two" onclick="window.location='#teste'">
-          HOME2
+          About
         </div>
         <div class="menu-link link-three" onclick="window.location='#teste'">
-          HOME3
+          Contact
         </div>
         <div class="menu-link link-four" onclick="window.location='#teste'">
           HOME4
@@ -127,12 +127,33 @@
       <h2 data-text="About...">About...</h2>
       <div class="photo">
         <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content"></div>
+      </div>
+      <div class="description">
+        <p>Since beginning my journey as a freelance developer, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="skills" class="skills">
+      <h2 data-text="skills...">skills...</h2>
+      <div class="circle" data-splitting>
+        CSS-JS-React-PHP-Wpress-UI/UX-
+      </div>
+      <p>The main area of my expertise is front-end developement (client side of the web).
+        <br />
+        HTML, CSS3, JavaScript, building small and medium web apps with React Native, cistom plugins, features, animations, and coding interactive layouts.
+        <br/>
+        I have also full-stack developer experience with open source CMS like wordpress, a little of PHP and NodeJS.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 data-text="contact...">Contact...</h2>
       <form action="https://formspree.io/f/xknpbkzz" method="POST" id="my-form">
-        <h2>Leave your message</h2>
+        <h3>Leave your message</h3>
         <label>
           <input type="text" placeholder="Name" name="name" />
         </label>
@@ -150,25 +171,42 @@
       </form>
 
       <div id="status"></div>
+
+      <p>Let's set up a meeting, I pay the coffee 😉</p>
+
+      <div class="social-media">
+        <nav>
+          <a
+            href="https://www.linkedin.com/in/rafael-misato-0116031b1/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Rafaelmisato" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://wa.me/5511993360464" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </nav>
+      </div>
     </section>
 
-    <div class="social-media">
-      <nav>
-        <a
-          href="https://www.linkedin.com/in/rafael-misato-0116031b1/"
-          target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a href="https://github.com/Rafaelmisato" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://wa.me/5511993360464" target="_blank"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-      </nav>
-    </div>
+    <section class="pre-footer">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2020, All Rights Reserved.</p>
+      <p>Rafael Hikaru Misato | Web-developer</p>
+    </footer>
+    
 
     <script src="./js/index.js" type="module"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/splitting.js"></script>
+    <script> Splitting(); </script>
   </body>
 </html>
