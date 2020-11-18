@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <header>
+    <header id="home">
       <input type="checkbox" name="menu" id="menu" />
       <label for="menu">
         <div class="hamburger-wraper">
@@ -59,17 +59,17 @@
 
         <div class="bg-blur"></div>
 
-        <div class="menu-link link-one" onclick="window.location='#teste'">
-          Home
+        <div class="menu-link link-one">
+          <a href="#home">Home</a>
         </div>
-        <div class="menu-link link-two" onclick="window.location='#teste'">
-          About
+        <div class="menu-link link-two">
+          <a href="#about-me">About</a>
         </div>
-        <div class="menu-link link-three" onclick="window.location='#teste'">
-          Contact
+        <div class="menu-link link-three">
+          <a href="#skills">Skills</a>
         </div>
-        <div class="menu-link link-four" onclick="window.location='#teste'">
-          HOME4
+        <div class="menu-link link-four">
+          <a href="#contact">Contact</a>
         </div>
       </label>
     </header>
@@ -88,7 +88,6 @@
     </section>
 
     <section id="slider">
-      
       <div class="slider">
         <input type="radio" name="testimonial" id="t-1">
         <input type="radio" name="testimonial" id="t-2">
@@ -120,8 +119,9 @@
           <label for="t-5"></label>
         </div>
       </div>
-
     </section>
+
+    <div class="" id="about-me"></div>
 
     <section id="about-me" class="about-me">
       <h2 data-text="About...">About...</h2>
@@ -136,8 +136,10 @@
         <p>Since beginning my journey as a freelance developer, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
       </div>
     </section>
+    
+    <div id="skills"></div>
 
-    <section id="skills" class="skills">
+    <section class="skills">
       <h2 data-text="skills...">skills...</h2>
       <div class="circle" data-splitting>
         CSS-JS-React-PHP-Wpress-UI/UX-

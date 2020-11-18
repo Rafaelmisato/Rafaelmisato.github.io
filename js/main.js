@@ -1,3 +1,4 @@
+/**loader**/
 document.onreadystatechange = function() { 
 	if (document.readyState !== "complete") { 
 			document.querySelector( 
@@ -12,10 +13,26 @@ document.onreadystatechange = function() {
 	} 
 }; 
 
+/**menu scroll**/
+const menuItems = document.querySelectorAll('.menu-link');
 
+menuItems.forEach(item => {
+	item.addEventListener('click', scrollToIdOnClick)
+})
+
+function scrollToIdOnClick(event) {
+	event.preventDefault()
+	const element = event.target;
+	const id = element.getAttribute('href');
+	const to = document.querySelector(id).offsetTop;
+
+	window.scroll({
+		top: to,
+		behavior: "smooth",
+	});
+}
 
 /**form**/
-
 window.addEventListener("DOMContentLoaded", function() {
 
 	// get the form elements defined in your form HTML above
