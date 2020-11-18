@@ -4,6 +4,8 @@
   --neon-border-color: #2e9599;
 }
 
+/**overflow ainda ta pegando | foto nao ta carregando | menu quando chega perto do circle buga **/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -516,7 +518,7 @@ about-me
 	height: 300px;
 	transition: 0.5s;
 	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-	background: url(../img/rafael.jpg) top no-repeat;
+	background: url(../img/rafael.jpg);
 	background-size: cover;
 }
 
