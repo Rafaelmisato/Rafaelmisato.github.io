@@ -11,11 +11,7 @@ import * as THREE from './three.module.js';
 
 			function init() {
 
-<<<<<<< HEAD
-				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 2000 );
-=======
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
->>>>>>> 22a5ef0... rebuild portfolio
 				camera.position.z = 600;
 
 				scene = new THREE.Scene();
@@ -75,11 +71,7 @@ import * as THREE from './three.module.js';
 
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
-<<<<<<< HEAD
-				renderer.setSize( window.innerWidth, window.innerHeight );
-=======
 				renderer.setSize( window.innerWidth, window.innerHeight / 2 );
->>>>>>> 22a5ef0... rebuild portfolio
 				document.body.appendChild( renderer.domElement );
 
 				document.body.style.touchAction = 'none';
@@ -99,11 +91,7 @@ import * as THREE from './three.module.js';
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
 
-<<<<<<< HEAD
-				renderer.setSize( window.innerWidth, window.innerHeight );
-=======
 				renderer.setSize( window.innerWidth, window.innerHeight / 2 );
->>>>>>> 22a5ef0... rebuild portfolio
 
 			}
 

@@ -1,12 +1,12 @@
 /**general context**/
 :root {
 	--neon-text-color: #f7dc68;
-<<<<<<< HEAD
   --neon-border-color: #2e9599;
-=======
-	--neon-border-color: #2e9599;
->>>>>>> 22a5ef0... rebuild portfolio
 }
+
+/* 
+bugou tudo. qualquer coisa control z */
+
 
 * {
 	margin: 0;
@@ -19,17 +19,10 @@
 a {text-decoration: none;}
 img {max-width: 100%;display: block;}
 ul,li {list-style-type: none;}
-<<<<<<< HEAD
-html, body {overflow: hidden;}
-
-body {
-	padding: 0 1%;
-=======
 body {
 	background: #0f0f0f;
 	overflow-x: hidden;
 	padding: 0;
->>>>>>> 22a5ef0... rebuild portfolio
 }
 
 canvas {
@@ -37,70 +30,6 @@ canvas {
 	top: 0;
 	left: 0;
 	width: 100%;
-<<<<<<< HEAD
-	height: 100vh;
-	display: block;
-	z-index: -1;
-	margin: 0;
-}
-
-/*Navigation-buttons*/
-.tab-links{
-	display: flex;
-	padding: 10px 0;
-	justify-content: space-evenly;
-	width: 320px;
-	margin: 10px auto;
-}
-
-.tab-links > button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  cursor: pointer;
-  width: 90px;
-  height: 50px;
-  border-radius: 10px;
-	background: transparent;
-	font-style: italic;
-	font-size: 20px;
-	color: #fff;
-  text-shadow:
-    0 0 1px #0ff,
-    0 0 2px #0ff,
-		0 0 3px #0ff;
-	border: 0;
-}
-
-.tab-links > button:focus, .tab-links > button:active {
-		animation: flicker 1.5s infinite alternate;
-}
-
-.tab-links > button::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 0%;
-  transition: .4s;
-}
-
-.tab-links > button:hover::after,
-.tab-links > button.active::after {
-  animation: flicker 1.5s infinite alternate;
-}
-
-.active {
-	animation: flicker 1.5s infinite alternate;
-}
-
-/*name content*/
-.name{
-	position: absolute;
-	top: 50%;
-=======
 	height: 50vh;
 	display: block;
 	z-index: -2;
@@ -296,7 +225,6 @@ name svg
 .name{
 	position: absolute;
 	top: 20%;
->>>>>>> 22a5ef0... rebuild portfolio
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -305,14 +233,9 @@ name svg
 	color: #0ff;
 	background-color: transparent;
 	padding: 30px;
-<<<<<<< HEAD
-}
-.name svg{
-=======
 	z-index: -1;
 }
 .name > svg{
->>>>>>> 22a5ef0... rebuild portfolio
 	stroke-width: 1px;
 	stroke: #0ff;
 	stroke-dashoffset: 1000;
@@ -321,11 +244,7 @@ name svg
 	animation-delay: 1s;
 }
 .name h2{
-<<<<<<< HEAD
-	margin-top: -20px;
-=======
 	margin-top: -30px;
->>>>>>> 22a5ef0... rebuild portfolio
 	font-size: 20px;
 	font-style: italic;
 	text-align: center;
@@ -337,112 +256,6 @@ name svg
 	100%{stroke-dashoffset: 0;}
 }
 
-<<<<<<< HEAD
-/**sections**/
-/*works*/
-#works{
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 300px;
-	width: 300px;
-}
-
-#works > .content-works {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	padding: 20px;
-	color: #0ff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-}
-
-#works > .content-works > a > .face > p {
-	color: #333;
-}
-
-.face {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background: #f7dc68;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 25%;
-	transform: translateX(-50%);
-}
-
-.face::before {
-	content: '';
-	position: absolute;
-	top: 130px;
-	width: 100px;
-	height: 50px;
-	background: #f46c3f;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
-	transition: 0.5s;
-}
-
-.face:hover::before {
-	top: 130px;
-	width: 100px;
-	height: 50px;
-	background: #a7226f;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
-}
-
-.face > p {
-	position: relative;
-	top: -35%;
-}
-
-.eyes {
-	position: absolute;
-	top: 40%;
-	left: 26%;
-	display: flex;
-}
-
-.eyes .eye {
-	position: relative;
-	width: 50px;
-	height: 50px;
-	display: block;
-	background: #fff;
-	margin: 0 10px;
-	border-radius: 50%;
-}
-
-.eyes .eye::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 15px;
-	transform: translate(-50%, -50%);
-	width: 30px;
-	height: 30px;
-	background: #333;
-	border-radius: 50%;
-}
-
-/*contact*/
-#contact{
-	display: none;
-	position: absolute;
-	top: 54%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-=======
 /**
 slider    -- RE-CHECK, RESPONSIVE AND DIVS
 **/
@@ -712,7 +525,6 @@ contact form
 **/
 #contact {
 	z-index: -1;
->>>>>>> 22a5ef0... rebuild portfolio
 }
 
 #contact > form {
@@ -789,18 +601,11 @@ contact form
 	animation: status 4s ease forwards;
 }
 
-<<<<<<< HEAD
-/**social-media-box**/
-.social-media{
-	position: absolute;
-	top: 85%;
-=======
 /**
 social media box
 **/
 .social-media{
 	position: absolute;
->>>>>>> 22a5ef0... rebuild portfolio
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
@@ -809,10 +614,7 @@ social media box
 	max-width: 300px;
 	width: 100%;
 	animation: mediaup 2s ease-in-out;
-<<<<<<< HEAD
-=======
 	z-index: -1;
->>>>>>> 22a5ef0... rebuild portfolio
 }
 .social-media a{
 	margin: 10px;
@@ -893,12 +695,9 @@ social media box
 	}
 }
 
-<<<<<<< HEAD
-=======
 
 
 
 
 
 /**slider TEST**/
->>>>>>> 22a5ef0... rebuild portfolio
