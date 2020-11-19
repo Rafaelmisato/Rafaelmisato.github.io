@@ -1,10 +1,8 @@
 /**general context**/
 :root {
-	--neon-text-color: #f7dc68;
-  --neon-border-color: #2e9599;
+	--primary-color: #c0b283;
 }
-
-/**overflow ainda ta pegando | foto nao ta carregando | menu quando chega perto do circle buga **/
+/**320 px slider ultrapassa, colocar gesture com dedo pra passar**/
 
 * {
 	margin: 0;
@@ -153,7 +151,7 @@ label header {
 	margin-left: -75px;
 	width: 150px;
 	height: 150px;
-	background: #0ff;
+	background: var(--primary-color);
 	border-radius: 50%;
 }
 
@@ -198,7 +196,7 @@ label header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #0ff;
+	background: var(--primary-color);
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -207,24 +205,24 @@ label header {
 
 .link-one{
 	position: absolute;
-	top: -140px;
-	left: -140px;
+	top: -160px;
+	left: -160px;
 }
 
 .link-two {
 	position: absolute;
-	top: -140px;
-	left: -140px;
+	top: -160px;
+	left: -160px;
 }
 .link-three {
 	position: absolute;
-	top: -140px;
-	left: -140px;
+	top: -160px;
+	left: -160px;
 }
 .link-four {
 	position: absolute;
-	top: -140px;
-	left: -140px;
+	top: -160px;
+	left: -160px;
 }
 
 /**
@@ -238,13 +236,13 @@ name svg
 	text-align: center;
 	width: 100%;
 	max-width: 600px;
-	color: #0ff;
+	color: var(--primary-color);
 	background-color: transparent;
 	padding: 30px;
 }
 .name > svg{
 	stroke-width: 1px;
-	stroke: #0ff;
+	stroke: var(--primary-color);
 	stroke-dashoffset: 1000;
 	stroke-dasharray: 1000;
 	animation: nomesvg 10s ease-in-out forwards;
@@ -286,7 +284,12 @@ slider
   position: relative;
   min-height: 450px;
   perspective: 1000px;
-	overflow-x: hidden;
+}
+
+.testimonials p {
+	position: absolute;
+	left: 90%;
+	font-size: 50px;
 }
 
 .testimonials .item {
@@ -297,7 +300,7 @@ slider
   text-align: center;
   transition: transform 0.4s;
   transform-style: preserve-3d;
-  box-shadow: 0 0 10px #0ff;
+  box-shadow: 0 0 10px var(--primary-color);
   user-select: none;
 	cursor: pointer;
 }
@@ -469,6 +472,7 @@ about-me
 	align-items: center;
 	margin-top: 100px;
 	background: #202020;
+	cursor: default;
 }
 
 .about-me:before {
@@ -495,8 +499,8 @@ about-me
 	left: 0;
 	width: 0;
 	height: 100%;
-	color: #0ff;
-	border-right: 2px solid #0ff;
+	color: var(--primary-color);
+	border-right: 2px solid var(--primary-color);
 	overflow: hidden;
 	animation: text-animate 6s linear infinite;
 }
@@ -564,7 +568,7 @@ about-me
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #0ff;
+	border: 2px solid var(--primary-color);
 	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
 	animation: animate-photo 2s linear infinite;
 	transition: 0.5s;
@@ -595,6 +599,8 @@ about-me
 	margin-bottom: 100px;
 	padding: 0 20px;
 	text-align: center;
+	line-height: 1.4em;
+	font-size: 18px;
 }
 
 /**
@@ -626,6 +632,7 @@ skills
 	-webkit-text-stroke: 1px #383d52;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	cursor: default;
 }
 
 .skills h2::before {
@@ -635,8 +642,8 @@ skills
 	left: 0;
 	width: 0;
 	height: 100%;
-	color: #0ff;
-	border-right: 2px solid #0ff;
+	color: var(--primary-color);
+	border-right: 2px solid var(--primary-color);
 	overflow-x: hidden;
 	animation: text-animate 6s linear infinite;
 }
@@ -683,6 +690,8 @@ skills
 	margin-bottom: 200px;
 	padding: 0 20px;
 	text-align: center;
+	line-height: 1.4em;
+	font-size: 18px;
 }
 
 /**
@@ -716,6 +725,7 @@ contact form
 	-webkit-text-stroke: 1px #383d52;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	cursor: default;
 }
 
 .contact h2::before {
@@ -725,8 +735,8 @@ contact form
 	left: 0;
 	width: 0;
 	height: 100%;
-	color: #0ff;
-	border-right: 2px solid #0ff;
+	color: var(--primary-color);
+	border-right: 2px solid var(--primary-color);
 	overflow-x: hidden;
 	animation: text-animate 6s linear infinite;
 }
@@ -748,17 +758,24 @@ contact form
 
 .contact > form > label > input {
 	width: 280px;
-	padding:10px;
+	padding: 20px;
 	margin-bottom: 6px;
 	border: none;
 	border-radius: 20px;
 	background: rgba(90, 90, 90, 0.4);
 	font-size: 16px;
 	outline: none;
-	color: #0ff;
+	color: var(--primary-color);
 }
 
-.contact > form > textarea {
+.contact span {
+	display: block;
+	color: var(--primary-color);
+	text-align: left;
+	margin: 8px;
+}
+
+.contact form textarea {
 	width: 280px;
 	height: 150px;
 	padding:16px;
@@ -768,13 +785,13 @@ contact form
 	background: rgba(90, 90, 90, 0.4);
 	font-size: 16px;
 	outline: none;
-	color: #0ff;
+	color: var(--primary-color);
 	resize: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 }
 
-.contact > form > button {
+.contact form > button {
 	width: 100px;
 	height: 40px;
 	padding:2px;
@@ -784,9 +801,10 @@ contact form
 	background: rgba(90, 90, 90, 0.9);
 	font-size: 16px;
 	outline: none;
-	color: #0ff;
+	color: var(--primary-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 .contact > #status {
@@ -811,6 +829,7 @@ contact form
 	font-family: 'Roboto', sans-serif;
 	color: #ccc;
 	margin-bottom: 20px;
+	font-size: 18px;
 }
 
 /**social media box**/
@@ -1012,6 +1031,26 @@ responsive
 	.photo {
 		width: 200px;
 		height: 200px;
+	}
+
+	.description p {
+	line-height: 1em;
+	font-size: 16px;
+	}
+
+	/**
+	skills
+	**/
+	.skills p {
+	line-height: 1em;
+	font-size: 16px;
+	}
+
+	/**
+	contact
+	**/
+	.contact p {
+		font-size: 16px;
 	}
 
 	/**

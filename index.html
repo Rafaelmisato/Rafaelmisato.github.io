@@ -33,6 +33,21 @@
   </head>
 
   <body>
+    <div class="loader-wraper" id="loader">
+      <div class="loader">
+        <span style="--i:1;" >L</span>
+        <span style="--i:2;" >o</span>
+        <span style="--i:3;" >a</span>
+        <span style="--i:4;" >d</span>
+        <span style="--i:5;" >i</span>
+        <span style="--i:6;" >n</span>
+        <span style="--i:7;" >g</span>
+        <span style="--i:8;" >.</span>
+        <span style="--i:9;" >.</span>
+        <span style="--i:10;" >.</span>
+      </div>
+    </div>
+
     <input type="checkbox" name="menu" id="menu" />
     <label for="menu">
         <header id="home">
@@ -143,18 +158,23 @@
       <form action="https://formspree.io/f/xknpbkzz" method="POST" id="my-form">
         <h3>Leave your message</h3>
         <label>
+          <span>Name</span>
           <input type="text" placeholder="Name" name="name" />
         </label>
 
         <label>
+          <span>Email</span>
           <input type="email" placeholder="E-mail" name="_replyto" />
         </label>
 
+        <label>
+        <span>Message</span>
         <textarea
           name="message"
           id="message"
           placeholder="Your message..."
         ></textarea>
+      </label>
         <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
       </form>
 
@@ -190,21 +210,6 @@
       <p>Copyright &copy; 2020, All Rights Reserved.</p>
       <p>Rafael Hikaru Misato | Web-developer</p>
     </footer>
-
-    <div class="loader-wraper" id="loader">
-      <div class="loader">
-        <span style="--i:1;" >L</span>
-        <span style="--i:2;" >o</span>
-        <span style="--i:3;" >a</span>
-        <span style="--i:4;" >d</span>
-        <span style="--i:5;" >i</span>
-        <span style="--i:6;" >n</span>
-        <span style="--i:7;" >g</span>
-        <span style="--i:8;" >.</span>
-        <span style="--i:9;" >.</span>
-        <span style="--i:10;" >.</span>
-      </div>
-    </div>
     
 
     <script>
