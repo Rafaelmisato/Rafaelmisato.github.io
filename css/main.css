@@ -3,6 +3,7 @@
 	--primary-color: #c0b283;
 }
 /**320 px slider ultrapassa, colocar gesture com dedo pra passar**/
+/**modificar slider**/
 
 * {
 	margin: 0;
@@ -10,6 +11,7 @@
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
 
 a {text-decoration: none;}
